@@ -1,0 +1,30 @@
+(lang dune 3.10)
+(name blockchain)
+(sections (lib .) (libexec .))
+(files
+ (lib
+  (META
+   blockchain.a
+   blockchain.cma
+   blockchain.cmi
+   blockchain.cmt
+   blockchain.cmx
+   blockchain.cmxa
+   blockchain.ml
+   dune-package
+   opam))
+ (libexec (blockchain.cmxs)))
+(library
+ (name blockchain)
+ (kind normal)
+ (archives (byte blockchain.cma) (native blockchain.cmxa))
+ (plugins (byte blockchain.cma) (native blockchain.cmxs))
+ (native_archives blockchain.a)
+ (requires nocrypto cryptokit)
+ (main_module_name Blockchain)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name blockchain)
+   (visibility public)
+   (source (path Blockchain) (impl (path blockchain.ml))))))

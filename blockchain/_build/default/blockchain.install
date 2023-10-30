@@ -1,0 +1,15 @@
+lib: [
+  "_build/install/default/lib/blockchain/META"
+  "_build/install/default/lib/blockchain/blockchain.a"
+  "_build/install/default/lib/blockchain/blockchain.cma"
+  "_build/install/default/lib/blockchain/blockchain.cmi"
+  "_build/install/default/lib/blockchain/blockchain.cmt"
+  "_build/install/default/lib/blockchain/blockchain.cmx"
+  "_build/install/default/lib/blockchain/blockchain.cmxa"
+  "_build/install/default/lib/blockchain/blockchain.ml"
+  "_build/install/default/lib/blockchain/dune-package"
+  "_build/install/default/lib/blockchain/opam"
+]
+libexec: [
+  "_build/install/default/lib/blockchain/blockchain.cmxs"
+]

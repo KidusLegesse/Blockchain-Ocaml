@@ -1,0 +1,6 @@
+description = ""
+requires = "cryptokit nocrypto"
+archive(byte) = "blockchain.cma"
+archive(native) = "blockchain.cmxa"
+plugin(byte) = "blockchain.cma"
+plugin(native) = "blockchain.cmxs"
